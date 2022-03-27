@@ -56,6 +56,7 @@ tracks/0/keys = {
 }
 
 [node name="Piggy" type="Area2D"]
+collision_mask = 2
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -74,3 +75,5 @@ shape = SubResource( 1 )
 anims/Idle = SubResource( 2 )
 anims/RESET = SubResource( 3 )
 anims/Run = SubResource( 4 )
+
+[connection signal="area_entered" from="." to="." method="_on_Piggy_area_entered"]

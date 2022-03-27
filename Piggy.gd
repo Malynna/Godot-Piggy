@@ -22,8 +22,14 @@ func _process(delta):
 		animationPlayer.play("Run")	
 	else:
 		animationPlayer.play("Idle")	
+
+		
 		
 func move(xspeed, yspeed, delta):
 	position.x += xspeed * delta
 	position.y += yspeed * delta
 	moving = true
+
+func _on_Piggy_area_entered(area):
+	area.queue_free()
+	scale *= 1.1
