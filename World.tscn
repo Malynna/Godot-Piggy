@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Pig.png" type="Texture" id=1]
+[ext_resource path="res://Piggy.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.0
@@ -17,6 +18,8 @@ __meta__ = {
 }
 
 [node name="Piggy" type="Area2D" parent="."]
+position = Vector2( 23, 14 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -27,4 +30,5 @@ offset = Vector2( 0, -4 )
 hframes = 3
 
 [node name="Collision" type="CollisionShape2D" parent="Piggy"]
+rotation = 1.5708
 shape = SubResource( 1 )
