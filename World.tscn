@@ -27,5 +27,4 @@ offset = Vector2( 0, -4 )
 hframes = 3
 
 [node name="Collision" type="CollisionShape2D" parent="Piggy"]
-rotation = 1.5708
 shape = SubResource( 1 )
